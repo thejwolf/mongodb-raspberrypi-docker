@@ -75,7 +75,7 @@ jobs:
         with:
           context: "{{defaultContext}}:${{ inputs.mongodb-version }}"
           push: ${{ github.event_name != 'pull_request' }}
-          tags: r${{ inputs.mongodb-version }}${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}-unofficial
+          tags: r${{ inputs.mongodb-version }}${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
