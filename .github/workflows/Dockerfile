@@ -88,7 +88,7 @@ ENV MONGO_VERSION 7.0.11
 ENV PI_VERSION pi4
 
 RUN set -x; \
-    wget -O "/tmp/unofficial-mongodb.ce.${PI_VERSION}.${MONGO_VERSION}.tar.gz" "https://github.com/themattman/mongodb-raspberrypi-binaries/releases/download/r${MONGO_VERSION}-rpi-unofficial/mongodb.ce.${PI_VERSION}.r${MONGO_VERSION}.tar.gz" \
+    wget -O "/tmp/unofficial-mongodb.ce.${PI_VERSION}.${MONGO_VERSION}.tar.gz" "https://github.com/themattman/mongodb-raspberrypi-binaries/releases/download/${MONGO_VERSION}-rpi-unofficial/mongodb.ce.${PI_VERSION}.${MONGO_VERSION}.tar.gz" \
         && tar xzvf "/tmp/unofficial-mongodb.ce.${PI_VERSION}.r${MONGO_VERSION}.tar.gz" -C /tmp \
         && mv /tmp/mongo /usr/local/bin \
         && mv /tmp/mongod /usr/local/bin \
