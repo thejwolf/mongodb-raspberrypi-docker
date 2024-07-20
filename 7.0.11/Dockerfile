@@ -84,7 +84,7 @@ RUN set -ex; \
 	rm -r "$GNUPGHOME"
 
 # https://docs.mongodb.org/master/release-notes/6.0/
-ENV MONGO_VERSION 7.0.11
+ENV MONGO_VERSION r7.0.11
 ENV PI_VERSION pi4
 
 RUN set -x; \
